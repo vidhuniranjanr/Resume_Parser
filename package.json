@@ -1,5 +1,11 @@
 {
+  "name": "Resume_Parser",
   "devDependencies": {
     "gh-pages": "^6.3.0"
+  },
+  "scripts": {
+    "homepage": "https://vidhuniranjanr.github.io/Resume_Parser",
+    "predeploy": "npm run build",   
+    "deploy": "gh-pages -d build"  
   }
 }
