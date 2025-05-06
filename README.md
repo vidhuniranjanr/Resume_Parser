@@ -1,4 +1,5 @@
 Document Q&A Chatbot
+
 A ReactJS & Tailwind CSS frontend with a FastAPI backend that uses LangGraph and Ollama for local LLM-powered chat. Upload PDFs (e.g., resumes) and ask questions about their content.
 
 Features
