@@ -11,8 +11,8 @@ Responsive UI with file upload and chat interface
 Quick Start
 Clone repo:
 bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
+git clone https://github.com/vidhuniranjanr/Resume_Parser.git
+
 
 Start Ollama server:
 bash
