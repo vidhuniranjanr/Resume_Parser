@@ -22,15 +22,6 @@ class PromptRequest(BaseModel):
     prompt: str
 
 
-# @app.post("/api/chat")
-# async def chat(request: PromptRequest):
-#     combined_prompt = f"Context:\n{uploaded_content}\n\nUser: {request.prompt}"
-#     conversation_state["messages"].append({"role": "user", "content": combined_prompt})
-    
-#     result = chat_graph.invoke(conversation_state)
-    
-#     return {"response": result["messages"][-1]["content"]}
-
 from fastapi import HTTPException
 
 @app.post("/api/chat")
@@ -47,8 +38,6 @@ async def chat(request: PromptRequest):
         raise HTTPException(status_code=500, detail=str(e))
 
 
-###################################
-##########################################
 
 @app.post("/api/upload")
 async def upload_file(file: UploadFile = File(...)):
