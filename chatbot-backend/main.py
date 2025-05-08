@@ -9,12 +9,12 @@ app = FastAPI()
 # --- CORS Middleware for React frontend ---
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, set this to your frontend URL
+    allow_origins=["*"], 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-uploaded_content = ""  # Add this at the top (global)
+uploaded_content = ""  
 
 conversation_state = {"messages": []}
 
